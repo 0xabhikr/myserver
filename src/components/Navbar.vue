@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- Mobile Navbar -->
     <div v-if="isMobile" class="mobile-navbar"
       style="display: flex; align-items: center; justify-content: space-between; padding: 8px 16px; border-bottom: 1px solid #eee;">
       <div style="display: flex; align-items: center;">
@@ -17,7 +16,6 @@
 
       <t-drawer header="Menu" placement="left" v-model:visible="drawerVisible" :footer="false">
         <div style="display: flex; flex-direction: column; padding: 1rem; gap: 8px;">
-          <!-- Search box for mobile -->
           <t-input v-model="searchQuery" placeholder="Search..." style="margin-bottom: 16px;font-family: 'Oxanium', sans-serif;">
             <template #suffix>
               <t-icon name="search" style="color: grey; font-size: 16px;"></t-icon>
@@ -27,8 +25,6 @@
           <t-button variant="text" @click="navigateTo('0')">
             <i class="fas fa-home" style="margin-right: 8px;"></i> Home
           </t-button>
-
-          <!-- Updated Dropdown after Home -->
           <t-dropdown :options="options" :min-column-width="112" @click="clickHandler">
             <t-button variant="outline" theme="default" style="width: 100%;">
               <i class="" style="margin-right: 8px;"></i> Components
@@ -130,7 +126,6 @@ const isMobile = ref(false);
 const drawerVisible = ref(false);
 const searchQuery = ref(""); 
 
-// Updated options with JSX rendering using 'h'
 const options = [
   {
     content: 'Option 1',
@@ -216,13 +211,10 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
-/* Desktop Navbar (no padding on sides) */
 @media (min-width: 768px) {
   .mobile-navbar {
     padding: 8px 16px;
   }
-
-  /* Ensure desktop navbar has no extra padding */
   .t-head-menu {
     padding: 0 !important;
   }
@@ -231,15 +223,11 @@ onBeforeUnmount(() => {
     padding: 0 !important;
   }
 }
-
-/* Mobile navbar adjustments */
 @media (max-width: 768px) {
   .mobile-navbar {
     padding: 8px 16px;
   }
 }
-
-/* Add custom styles if needed for search box */
 .t-input {
   width: 150px;
 }
