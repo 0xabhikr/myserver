@@ -16,7 +16,8 @@
 
       <t-drawer header="Menu" placement="left" v-model:visible="drawerVisible" :footer="false">
         <div style="display: flex; flex-direction: column; padding: 1rem; gap: 8px;">
-          <t-input v-model="searchQuery" placeholder="Search..." style="margin-bottom: 16px;font-family: 'Oxanium', sans-serif;">
+          <t-input v-model="searchQuery" placeholder="Search..."
+            style="margin-bottom: 16px;font-family: 'Oxanium', sans-serif;">
             <template #suffix>
               <t-icon name="search" style="color: grey; font-size: 16px;"></t-icon>
             </template>
@@ -28,7 +29,7 @@
           <t-dropdown :options="options" :min-column-width="112" @click="clickHandler">
             <t-button variant="outline" theme="default" style="width: 100%;">
               <i class="" style="margin-right: 8px;"></i> Components
-              <template #suffix> 
+              <template #suffix>
                 <chevron-down-icon size="16" />
               </template>
             </t-button>
@@ -50,9 +51,10 @@
     <!-- Desktop Navbar -->
     <t-head-menu v-else :value="active" @change="onChange"
       style="font-family: 'Oxanium', sans-serif; font-size: 16px; height: 48px; align-items: center; padding: 0 12px;">
-      
+
       <template #logo>
-        <div style="display: flex; flex-direction: column; justify-content: center; padding-left: 6px; padding-right: 0;">
+        <div
+          style="display: flex; flex-direction: column; justify-content: center; padding-left: 6px; padding-right: 0;">
           <div style="display: flex; align-items: center;">
             <img src="/favicon-32x32.png" alt="Logo"
               style="width: 24px; height: 24px; margin-right: 6px; margin-left: -15px;" />
@@ -65,7 +67,8 @@
       <template #operations>
         <div style="display: flex; gap: 12px; align-items: center; margin-left: auto; padding-right: 0;">
           <!-- Search box for desktop -->
-          <t-input v-model="searchQuery" placeholder="Search..." style="margin-right: 12px; width: 200px; font-family: 'Oxanium', sans-serif;">
+          <t-input v-model="searchQuery" placeholder="Search..."
+            style="margin-right: 12px; width: 200px; font-family: 'Oxanium', sans-serif;">
             <template #suffix>
               <t-icon name="search" style="color: grey; font-size: 16px;"></t-icon>
             </template>
@@ -76,24 +79,27 @@
           </t-menu-item>
 
           <!-- Updated Dropdown after Home -->
-          <t-dropdown :options="options" :min-column-width="112" @click="clickHandler " style=" font-family: 'Oxanium', sans-serif;">
+          <t-dropdown :options="options" :min-column-width="112" @click="clickHandler"
+            style=" font-family: 'Oxanium', sans-serif;">
             <t-button variant="outline" theme="default" style="width: 150px; font-family: 'Oxanium', sans-serif;">
               <i class="" style="margin-right: 8px; "></i>Components
-              <template #suffix> 
+              <template #suffix>
                 <chevron-down-icon size="16" />
               </template>
             </t-button>
           </t-dropdown>
 
-          <t-menu-item value="1" style="font-size: 14px;">
-            <i class="fas fa-user" style="margin-right: 8px;"></i> About
-          </t-menu-item>
-          <t-menu-item value="2" style="font-size: 14px;">
-            <i class="fas fa-project-diagram" style="margin-right: 8px;"></i> Projects
-          </t-menu-item>
-          <t-menu-item value="3" style="font-size: 14px;">
-            <i class="fas fa-phone" style="margin-right: 8px;"></i> Contact
-          </t-menu-item>
+          <div style="display: flex; gap: 0px;">
+            <t-menu-item value="1" style="font-size: 14px;">
+              <i class="fas fa-user" style="margin-right: 8px;"></i> About
+            </t-menu-item>
+            <t-menu-item value="2" style="font-size: 14px;">
+              <i class="fas fa-project-diagram" style="margin-right: 8px;"></i> Projects
+            </t-menu-item>
+            <t-menu-item value="3" style="font-size: 14px;">
+              <i class="fas fa-phone" style="margin-right: 8px;"></i> Contact
+            </t-menu-item>
+          </div>
         </div>
       </template>
     </t-head-menu>
@@ -103,7 +109,7 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount, h } from 'vue';  // Added 'h' import for JSX support
 import { useRoute, useRouter } from 'vue-router';
-import { 
+import {
   HeadMenu as THeadMenu,
   MenuItem as TMenuItem,
   Button as TButton,
@@ -124,7 +130,8 @@ const router = useRouter();
 
 const isMobile = ref(false);
 const drawerVisible = ref(false);
-const searchQuery = ref(""); 
+const searchQuery = ref("");
+
 
 const options = [
   {
@@ -215,6 +222,7 @@ onBeforeUnmount(() => {
   .mobile-navbar {
     padding: 8px 16px;
   }
+
   .t-head-menu {
     padding: 0 !important;
   }
@@ -223,11 +231,13 @@ onBeforeUnmount(() => {
     padding: 0 !important;
   }
 }
+
 @media (max-width: 768px) {
   .mobile-navbar {
     padding: 8px 16px;
   }
 }
+
 .t-input {
   width: 150px;
 }

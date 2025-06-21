@@ -1,4 +1,29 @@
-/* In your global CSS file (e.g., src/assets/styles.css) */
-/* body {
-  background-color: whitesmoke; 
-} */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: #ffffff;
+  --border-color: #ddd;
+  --navbar-bg: #f9f9f9;
+}
+
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-bg: #1e1e1e;
+  --border-color: #444;
+  --navbar-bg: #1f1f1f;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.t-card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+.t-input input {
+  background-color: transparent;
+  color: var(--text-color);
+}

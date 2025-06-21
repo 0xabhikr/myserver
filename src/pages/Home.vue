@@ -1,4 +1,23 @@
 <template>
+  <t-space>
+    <t-sticky-tool
+      type="compact"
+      placement="right-center"
+      :offset="[-80, 100]"
+      style="position: fixed; z-index: 9999;"
+      @click="handleClick"
+      @hover="handleHover"
+    >
+      <t-sticky-item :icon="renderChatIcon" popup="chat" />
+      <t-sticky-item :icon="renderAddIcon" popup="add" />
+      <t-sticky-item
+        :icon="renderQrIcon"
+        :popup="renderPopup"
+        :popup-props="{ overlayInnerStyle: { padding: '4px', height: '128px' } }"
+      />
+    </t-sticky-tool>
+  </t-space>
+
   <t-alert
     theme="warning"
     message="This site is under development"
@@ -14,7 +33,7 @@
       background-size: cover;
       background-position: center;
       padding: 20px;
-      min-height: 300px; 
+      min-height: 300px;
     "
   >
     <t-space direction="vertical" size="large">
@@ -37,10 +56,37 @@
 </template>
 
 <script setup lang="ts">
+import { h } from 'vue';
 import { useHead } from '@vueuse/head';
+import { StickyItemProps, StickyToolProps } from 'tdesign-vue-next';
+import { ChatIcon, AddIcon, QrcodeIcon } from 'tdesign-icons-vue-next';
 
+// Icon renderers using h()
+const renderChatIcon: StickyItemProps['icon'] = () => h(ChatIcon);
+const renderAddIcon: StickyItemProps['icon'] = () => h(AddIcon);
+const renderQrIcon: StickyItemProps['icon'] = () => h(QrcodeIcon);
+
+// Popup content for QR code
+const renderPopup: StickyItemProps['popup'] = () =>
+  h('img', {
+    alt: 'TDesign Logo',
+    width: 120,
+    height: 120,
+    src: 'https://tdesign.gtimg.com/site/site.jpg',
+  });
+
+// Sticky tool interaction handlers
+const handleClick: StickyToolProps['onClick'] = (context) => {
+  console.log('click', context);
+};
+
+const handleHover: StickyToolProps['onHover'] = (context) => {
+  console.log('hover', context);
+};
+
+// Set page title
 useHead({
-  title: 'Home | Abhikr'
+  title: 'Home | Abhikr',
 });
 </script>
 
@@ -51,6 +97,7 @@ useHead({
   flex-wrap: wrap;
   gap: 16px;
 }
+
 .profile-image {
   width: 130px;
   height: 130px;
@@ -58,6 +105,7 @@ useHead({
   margin-right: 20px;
   object-fit: cover;
 }
+
 .profile-info {
   flex: 1;
   color: white;
@@ -73,6 +121,7 @@ useHead({
   margin: 5px 0;
   font-size: 16px;
 }
+
 @media (max-width: 600px) {
   .profile-container {
     flex-direction: column;
