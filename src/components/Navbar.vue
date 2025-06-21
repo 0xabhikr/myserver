@@ -143,11 +143,11 @@ const options = [
     prefixIcon: () => h(DiscountIcon),
     children: [
       {
-        content: '选项五',
+        content: 'Option 1',
         value: 5,
       },
       {
-        content: '选项六',
+        content: 'Option 2',
         value: 6,
       },
     ],
