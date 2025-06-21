@@ -31,8 +31,8 @@
         <div class="profile-info">
           <h2>Abhikr</h2>
           <p>
-            Hi, I'm Abhikr! I'm passionate about web development and sharing my
-            ideas through this blog.
+            Hi, I'm Abhikr! I'm passionate about Cyber Security and sharing my
+            ideas through this blog so plz visit some times.
           </p>
         </div>
       </div>
