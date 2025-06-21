@@ -5,8 +5,8 @@
       <div style="display: flex; align-items: center;">
         <img src="/android-chrome-512x512.png" alt="Logo" style="width: 24px; height: 24px; margin-right: 6px;" />
         <div style="display: flex; flex-direction: column;">
-          <div style="font-size: 20px; font-weight: 400;">Abhikr | अभिषेक</div>
-          <div style="font-size: 11px; color: grey;">Fate is wonderful</div>
+          <div style="font-size: 20px; font-weight: 400; font-style: normal;">Abhikr | अभिषेक</div>
+          <div style="font-size: 11px; color: grey; font-style: normal;">Fate is wonderful</div>
         </div>
       </div>
 
