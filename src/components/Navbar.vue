@@ -22,6 +22,12 @@
               <t-icon name="search" style="color: grey; font-size: 16px;"></t-icon>
             </template>
           </t-input>
+            <t-button variant="outline" theme="default" style="width: 100%; font-family: 'Oxanium', sans-serif;">
+              <i class="" style="margin-right: 8px; "></i>Friends
+              <template #suffix>
+                <chevron-down-icon size="16" />
+              </template>
+            </t-button>
 
           <t-button variant="text" @click="navigateTo('0')">
             <i class="fas fa-home" style="margin-right: 8px;"></i> Home
