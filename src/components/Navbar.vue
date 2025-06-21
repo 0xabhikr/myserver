@@ -67,12 +67,22 @@
       <template #operations>
         <div style="display: flex; gap: 12px; align-items: center; margin-left: auto; padding-right: 0;">
           <!-- Search box for desktop -->
+           <t-space>
+            <t-button variant="outline" theme="default" style="width: 150px; font-family: 'Oxanium', sans-serif;">
+              <i class="" style="margin-right: 8px; "></i>Friends
+              <template #suffix>
+                <chevron-down-icon size="16" />
+              </template>
+            </t-button>
+            </t-space>
+          
           <t-input v-model="searchQuery" placeholder="Search..."
             style="margin-right: 12px; width: 200px; font-family: 'Oxanium', sans-serif;">
             <template #suffix>
               <t-icon name="search" style="color: grey; font-size: 16px;"></t-icon>
             </template>
           </t-input>
+          
 
           <t-menu-item value="0" style="font-size: 14px;">
             <i class="fas fa-home" style="margin-right: 8px;"></i> Home
@@ -81,12 +91,14 @@
           <!-- Updated Dropdown after Home -->
           <t-dropdown :options="options" :min-column-width="112" @click="clickHandler"
             style=" font-family: 'Oxanium', sans-serif;">
+            <t-space>
             <t-button variant="outline" theme="default" style="width: 150px; font-family: 'Oxanium', sans-serif;">
               <i class="" style="margin-right: 8px; "></i>Components
               <template #suffix>
                 <chevron-down-icon size="16" />
               </template>
             </t-button>
+            </t-space>
           </t-dropdown>
 
           <div style="display: flex; gap: 0px;">

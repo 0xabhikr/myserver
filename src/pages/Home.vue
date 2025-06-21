@@ -53,6 +53,39 @@
       </div>
     </t-space>
   </t-card>
+  <!-- <t-card style="
+      margin: 15px;
+      font-family: 'Oxanium', sans-serif;
+      font-style: italic;
+      background-image: url('/bgbanner.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+      min-height: 300px;
+      width: 300px;
+    "> -->
+    <!-- <template #footer>
+      <t-row :align="'middle'" justify="center" style="gap: 24px">
+        <t-col flex="auto" style="display: inline-flex; justify-content: center">
+          <t-button variant="text" shape="square">
+            <thumb-up-icon />
+          </t-button>
+        </t-col>
+
+        <t-col flex="auto" style="display: inline-flex; justify-content: center">
+          <t-button variant="text" shape="square">
+            <chat-icon />
+          </t-button>
+        </t-col>
+
+        <t-col flex="auto" style="display: inline-flex; justify-content: center">
+          <t-button variant="text" shape="square">
+            <share-icon />
+          </t-button>
+        </t-col>
+      </t-row>
+    </template> 
+  </t-card>-->
 </template>
 
 <script setup lang="ts">
@@ -60,6 +93,9 @@ import { h } from 'vue';
 import { useHead } from '@vueuse/head';
 import { StickyItemProps, StickyToolProps } from 'tdesign-vue-next';
 import { ChatIcon, AddIcon, QrcodeIcon } from 'tdesign-icons-vue-next';
+import { CardProps } from 'tdesign-vue-next';
+import { ThumbUpIcon, ShareIcon } from 'tdesign-icons-vue-next';
+const cover: CardProps['cover'] = 'https://tdesign.gtimg.com/site/source/card-demo.png';
 
 // Icon renderers using h()
 const renderChatIcon: StickyItemProps['icon'] = () => h(ChatIcon);
