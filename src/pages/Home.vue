@@ -29,7 +29,7 @@
       margin: 15px;
       font-family: 'Oxanium', sans-serif;
       font-style: italic;
-      background-image: url('/bgbanner.jpg');
+      background-image: url('https://res.cloudinary.com/dgu3gae6k/image/upload/v1750616297/bgbanner_mscnxc.jpg');
       background-size: cover;
       background-position: center;
       padding: 20px;
@@ -39,7 +39,7 @@
     <t-space direction="vertical" size="large">
       <div class="profile-container">
         <img
-          src="/logo.jpg"
+          src="https://res.cloudinary.com/dgu3gae6k/image/upload/v1750616298/logo_lht9xi.jpg"
           alt="Abhikr's Profile"
           class="profile-image"
         />
@@ -108,7 +108,7 @@ const renderPopup: StickyItemProps['popup'] = () =>
     alt: 'TDesign Logo',
     width: 120,
     height: 120,
-    src: 'https://tdesign.gtimg.com/site/site.jpg',
+    src: 'https://res.cloudinary.com/dgu3gae6k/image/upload/v1750615996/abhikr_ldj2kv.png',
   });
 
 // Sticky tool interaction handlers
