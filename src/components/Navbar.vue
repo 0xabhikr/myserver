@@ -185,8 +185,8 @@
             </template>
           </t-input>
           
-          <t-menu-item value="0"><i class="fas fa-home" style="margin-right: 8px;"></i> Home</t-menu-item>
-          <t-dropdown :options="options" :min-column-width="112" @click="clickHandler">
+          <t-menu-item value="0"><i class="fas fa-home" style="margin-right:5px;"></i>Home</t-menu-item>
+            <t-dropdown :options="options" :min-column-width="112" @click="clickHandler">
             <t-button variant="outline" theme="default" style="width: 150px; font-family: 'Oxanium', sans-serif;">
               <i class="" style="margin-right: 8px;"></i> Components
               <template #suffix>
