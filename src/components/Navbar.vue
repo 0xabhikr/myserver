@@ -194,14 +194,14 @@
               </template>
             </t-button>
           </t-dropdown>
-          <div style="display: flex; gap: 0px;">
-            <t-menu-item value="1">
+          <div style="display: flex; gap: 0px; padding: 0px;">
+            <t-menu-item value="1" style="padding: 5px;">
               <i class="" style="margin-right: 8px;"></i> About
             </t-menu-item>
-            <t-menu-item value="2">
+            <t-menu-item value="2" style="padding: 5px;">
               <i class="" style="margin-right: 8px;"></i> Projects
             </t-menu-item>
-            <t-menu-item value="3">
+            <t-menu-item value="3" style="padding: 5px;">
               <i class="" style="margin-right: 8px;"></i> Contact
             </t-menu-item>
           </div>
