@@ -196,13 +196,13 @@
           </t-dropdown>
           <div style="display: flex; gap: 0px;">
             <t-menu-item value="1">
-              <i class="fas fa-user" style="margin-right: 8px;"></i> About
+              <i class="" style="margin-right: 8px;"></i> About
             </t-menu-item>
             <t-menu-item value="2">
-              <i class="fas fa-project-diagram" style="margin-right: 8px;"></i> Projects
+              <i class="" style="margin-right: 8px;"></i> Projects
             </t-menu-item>
             <t-menu-item value="3">
-              <i class="fas fa-phone" style="margin-right: 8px;"></i> Contact
+              <i class="" style="margin-right: 8px;"></i> Contact
             </t-menu-item>
           </div>
         </div>
@@ -235,7 +235,6 @@ const drawerVisible = ref(false);
 const searchQuery = ref('');
 const showFriendsCard = ref(false);
 const showFriendsCardMobile = ref(false);
-const active = ref('0');
 
 const options = [
   { content: 'Button', value: 'btn' },
@@ -243,18 +242,41 @@ const options = [
   { content: 'Dialog', value: 'dialog' },
 ];
 
-const clickHandler = ({ value }) => {
-  MessagePlugin.info(`Clicked: ${value}`);
+const clickHandler = (data) => {
+  MessagePlugin.success(`Selected: ${data.content}`);
 };
 
-const onChange = (val) => {
-  active.value = val;
-  router.push({ path: `/page/${val}` });
+const pathToValue = {
+  '/': '0',
+  '/about': '1',
+  '/projects': '2',
+  '/contact': '3',
+  '/option1': '4',
+  '/option2': '5',
+  '/option3': '6',
+};
+
+const valueToPath = {
+  '0': '/',
+  '1': '/about',
+  '2': '/projects',
+  '3': '/contact',
+  '4': '/option1',
+  '5': '/option2',
+  '6': '/option3',
+};
+
+const active = ref(pathToValue[route.path] || '0');
+
+const onChange = (value) => {
+  const path = valueToPath[value];
+  if (path) {
+    router.push(path);
+  }
 };
 
 const navigateTo = (val) => {
-  active.value = val;
-  router.push({ path: `/page/${val}` });
+  onChange(val);
   drawerVisible.value = false;
 };
 
