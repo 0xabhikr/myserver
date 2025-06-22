@@ -309,8 +309,8 @@ onBeforeUnmount(() => {
 
 /* Desktop Friends Card */
 .friends-card {
-  width: 1000px;
-  padding: 16px;
+  width: 955px;
+  padding: 10px;
   background: white;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
