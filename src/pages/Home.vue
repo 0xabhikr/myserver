@@ -85,6 +85,40 @@
       <li>Most used languages: Python, TypeScript, C#, Lua</li>
       <li>Interests: Hacking, Vulnerability, AI, Cybersecurity</li>
     </ul>
+    <div style="margin-top: 1.5rem; display: flex; align-items: center;">
+      <span style="font-size: 1rem; font-weight: 500; font-family: Oxanium;">Social Networks:</span>
+      <!-- GitHub -->
+      <a href="https://github.com/0xabhikr" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"
+        style="margin-left: 1rem; color: #555; display: flex; align-items: center; text-decoration: none;">
+        <i class="fab fa-github" style="font-size: 1.6rem; cursor: pointer;"></i>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://instagram.com/0xabhikr" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile"
+        style="margin-left: 1rem; color: #555; display: flex; align-items: center; text-decoration: none;">
+        <i class="fab fa-instagram" style="font-size: 1.6rem; cursor: pointer;"></i>
+      </a>
+
+      <!-- Telegram -->
+      <a href="https://t.me/AbhikrX" target="_blank" rel="noopener noreferrer"
+        aria-label="Telegram Profile"
+        style="margin-left: 1rem; color: #555; display: flex; align-items: center; text-decoration: none;">
+        <i class="fab fa-telegram" style="font-size: 1.6rem; cursor: pointer;"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/0xabhikr" target="_blank" rel="noopener noreferrer"
+        aria-label="linkedin Profile"
+        style="margin-left: 1rem; color: #555; display: flex; align-items: center; text-decoration: none;">
+        <i class="fab fa-linkedin" style="font-size: 1.6rem; cursor: pointer;"></i>
+      </a>
+      <a href="https://x.com/Abhikr_X" target="_blank" rel="noopener noreferrer"
+        aria-label="Twitter Profile"
+        style="margin-left: 1rem; color: #555; display: flex; align-items: center; text-decoration: none;">
+        <i class="fa-brands fa-x-twitter" style="font-size: 1.6rem; cursor: pointer;"></i>
+      </a>
+
+
+
+    </div>
 
   </t-card>
 
