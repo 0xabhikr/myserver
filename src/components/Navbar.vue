@@ -12,7 +12,10 @@
       </div>
 
       <t-button variant="text" shape="square" @click="drawerVisible = true">
-        <menu-filled-icon />
+        <!-- <menu-filled-icon /> -->
+        <span class="material-symbols-outlined">
+menu
+</span>
       </t-button>
 
       <t-drawer header="Menu" placement="left" v-model:visible="drawerVisible" :footer="false">

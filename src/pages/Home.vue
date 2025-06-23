@@ -1,30 +1,17 @@
 <template>
   <t-space>
-    <t-sticky-tool
-      type="compact"
-      placement="right-center"
-      :offset="[-80, 100]"
-      style="position: fixed; z-index: 9999;"
-      @click="handleClick"
-      @hover="handleHover"
-    >
+    <t-sticky-tool type="compact" placement="right-center" :offset="[-80, 100]" style="position: fixed; z-index: 9999;"
+      @click="handleClick" @hover="handleHover">
       <t-sticky-item :icon="renderChatIcon" popup="chat" />
       <t-sticky-item :icon="renderAddIcon" popup="add" />
-      <t-sticky-item
-        :icon="renderQrIcon"
-        :popup="renderPopup"
-        :popup-props="{ overlayInnerStyle: { padding: '4px', height: '128px' } }"
-      />
+      <t-sticky-item :icon="renderQrIcon" :popup="renderPopup"
+        :popup-props="{ overlayInnerStyle: { padding: '4px', height: '128px' } }" />
     </t-sticky-tool>
   </t-space>
 
-  <t-alert
-    theme="warning"
-    message="This site is under development"
-    style="margin: 15px;"
-  />
+  <t-alert theme="warning" message="This site is under development" style="margin: 15px;" />
 
-  <t-card
+  <!-- <t-card
     style="
       margin: 15px;
       font-family: 'Oxanium', sans-serif;
@@ -53,7 +40,7 @@
       </div>
     </t-space>
   </t-card>
-  <!-- <t-card style="
+  <t-card style=" 
       margin: 15px;
       font-family: 'Oxanium', sans-serif;
       font-style: italic;
@@ -64,7 +51,7 @@
       min-height: 300px;
       width: 300px;
     "> -->
-    <!-- <template #footer>
+  <!-- <template #footer>
       <t-row :align="'middle'" justify="center" style="gap: 24px">
         <t-col flex="auto" style="display: inline-flex; justify-content: center">
           <t-button variant="text" shape="square">
@@ -84,8 +71,24 @@
           </t-button>
         </t-col>
       </t-row>
-    </template> 
-  </t-card>-->
+    </template>
+</t-card>-->
+  <t-card style="margin: 15px; font-family: 'Oxanium', sans-serif; font-style: italic;">
+    <template #title>
+      <h1
+        style="font-size: 30px; margin-bottom: -60px; margin-top: -1px; font-weight: 400;font-family: 'Oxanium', sans-serif;">
+        Today's Thoughts</h1>
+    </template>
+    <t-divider style="border-top-width: 2px; margin-top: 10px;" />
+    <ul style="font-size: 15px; margin-left: -20px;">
+      <li>Communication languages: Hindi, English (learning Spanish)</li>
+      <li>Most used languages: Python, TypeScript, C#, Lua</li>
+      <li>Interests: Hacking, Vulnerability, AI, Cybersecurity</li>
+    </ul>
+
+  </t-card>
+
+
 </template>
 
 <script setup lang="ts">
@@ -101,6 +104,15 @@ const cover: CardProps['cover'] = 'https://tdesign.gtimg.com/site/source/card-de
 const renderChatIcon: StickyItemProps['icon'] = () => h(ChatIcon);
 const renderAddIcon: StickyItemProps['icon'] = () => h(AddIcon);
 const renderQrIcon: StickyItemProps['icon'] = () => h(QrcodeIcon);
+import 'tdesign-vue-next/es/style/index.css';
+
+
+
+import { LogoGithubFilledIcon, LogoInstagramFilledIcon } from 'tdesign-icons-vue-next';
+
+useHead({
+  title: 'About | Abhikr',
+});
 
 // Popup content for QR code
 const renderPopup: StickyItemProps['popup'] = () =>
