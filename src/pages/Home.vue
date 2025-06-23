@@ -20,7 +20,7 @@
 
   <t-alert theme="warning" message="This site is under development" style="margin: 15px;" />
 
-  <t-card style="margin: 15px; font-family: 'Oxanium', sans-serif; font-style: italic;">
+  <!-- <t-card style="margin: 15px; font-family: 'Oxanium', sans-serif; font-style: italic;">
     <template #title>
       <h1 class="thoughts-title">Today's Thoughts</h1>
     </template>
@@ -53,7 +53,7 @@
         </a>
       </div>
     </div>
-  </t-card>
+  </t-card> -->
 </template>
 
 <script setup lang="ts">
