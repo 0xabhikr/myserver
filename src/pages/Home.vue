@@ -89,7 +89,7 @@
       <span class="blog-label" style="font-style: normal;"> 10 June , 2025 | 10:16 PM </span>
 
     </div>
-    <p style="margin-top: -1px;">Think of a webhook as a way for Telegram to “ping” your server every time something
+    <p style="margin-top: -1px;  font-style: normal">Think of a webhook as a way for Telegram to “ping” your server every time something
       happens
       — like when someone sends a message to your bot. Instead of you asking Telegram every few seconds, “Hey, got
       anything
@@ -114,7 +114,7 @@
       <span class="blog-label"  style="font-style: normal;"> 10 June , 2025 | 10:16 PM </span>
 
     </div>
-    <p style="margin-top: -1px;">Think of a webhook as a way for Telegram to “ping” your server every time something
+    <p style="margin-top: -1px;  font-style: normal">Think of a webhook as a way for Telegram to “ping” your server every time something
       happens
       — like when someone sends a message to your bot. Instead of you asking Telegram every few seconds, “Hey, got
       anything
@@ -139,7 +139,7 @@
       <span class="blog-label"  style="font-style: normal;"> 10 June , 2025 | 10:16 PM </span>
 
     </div>
-    <p style="margin-top: -1px;">Think of a webhook as a way for Telegram to “ping” your server every time something
+    <p style="margin-top: -1px; font-style: normal";>Think of a webhook as a way for Telegram to “ping” your server every time something
       happens
       — like when someone sends a message to your bot. Instead of you asking Telegram every few seconds, “Hey, got
       anything
