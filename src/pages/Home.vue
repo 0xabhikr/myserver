@@ -85,9 +85,9 @@
       <span class="blog-label"> 10 June , 2025 | 10:16 PM </span>
 
     </div>
-    <p style="margin-top: -1px;">It’s been almost a year since I last wrote a good article. Let’s talk about how this
+    <!-- <p style="margin-top: -1px;">It’s been almost a year since I last wrote a good article. Let’s talk about how this
       year’s
-      hottest language model collides with GraphQL through MCP.</p>
+      hottest language model collides with GraphQL through MCP.</p> -->
 
   </t-card>
 </template>
