@@ -4,7 +4,8 @@
     <div v-if="isMobile" class="mobile-navbar"
       style="display: flex; align-items: center; justify-content: space-between; padding: 8px 16px; border-bottom: 1px solid #eee;">
       <div style="display: flex; align-items: center;">
-        <img src="https://res.cloudinary.com/dgu3gae6k/image/upload/v1750616296/android-chrome-512x512_hc9657.png" alt="Logo" style="width: 24px; height: 24px; margin-right: 6px;" />
+        <img src="https://res.cloudinary.com/dgu3gae6k/image/upload/v1750616296/android-chrome-512x512_hc9657.png"
+          alt="Logo" style="width: 24px; height: 24px; margin-right: 6px;" />
         <div style="display: flex; flex-direction: column;">
           <div style="font-size: 20px; font-weight: 400; font-style: normal;">Abhikr | अभिषेक</div>
           <div style="font-size: 11px; color: grey;">Fate is wonderful</div>
@@ -14,8 +15,8 @@
       <t-button variant="text" shape="square" @click="drawerVisible = true">
         <!-- <menu-filled-icon /> -->
         <span class="material-symbols-outlined">
-menu
-</span>
+          menu
+        </span>
       </t-button>
 
       <t-drawer header="Menu" placement="left" v-model:visible="drawerVisible" :footer="false">
@@ -39,7 +40,8 @@ menu
               <div class="friends-card-mobile">
                 <div class="friend-cell">
                   <div class="friend-info">
-                    <img src="https://cdn.jsdelivr.net/gh/xyamzw/xyamzw/images/blog/avatar.png" alt="Friend 1" class="friend-image" />
+                    <img src="https://cdn.jsdelivr.net/gh/xyamzw/xyamzw/images/blog/avatar.png" alt="Friend 1"
+                      class="friend-image" />
                     <div class="friend-label-quote">
                       <div class="friend-label">Xyamzw</div>
                       <div class="friend-quote">"Play your own life, interpret your entire being"</div>
@@ -111,7 +113,7 @@ menu
 
     <!-- Desktop Navbar -->
     <t-head-menu v-else :value="active" @change="onChange"
-      style="font-family: 'Oxanium', sans-serif; font-size: 16px; height: 48px; align-items: center; padding: 0 12px;">
+      style="font-family: 'Oxanium', sans-serif; font-size: 16px; height: 48px; align-items: center; padding: 0 12px; background-color: #fdfdfd;">
       <template #logo>
         <div style="display: flex; flex-direction: column; justify-content: center; padding-left: 6px;">
           <div style="display: flex; align-items: center;">
@@ -136,7 +138,8 @@ menu
               <div class="friends-card" style="font-family: 'Oxanium', sans-serif;">
                 <div class="friend-cell">
                   <div class="friend-info">
-                    <img src="https://gravatar.com/avatar/139bf9b03b731cfd23a4061a08c5b4d4?s=200&r=g" alt="Friend 1" class="friend-image" />
+                    <img src="https://gravatar.com/avatar/139bf9b03b731cfd23a4061a08c5b4d4?s=200&r=g" alt="Friend 1"
+                      class="friend-image" />
                     <div class="friend-label-quote">
                       <div class="friend-label">Xyamzw</div>
                       <div class="friend-quote">"Play your own life, interpret your entire being"</div>
@@ -187,9 +190,9 @@ menu
               <t-icon name="search" style="color: grey; font-size: 16px;"></t-icon>
             </template>
           </t-input>
-          
+
           <t-menu-item value="0"><i class="fas fa-home" style="margin-right:5px;"></i>Home</t-menu-item>
-            <t-dropdown :options="options" :min-column-width="112" @click="clickHandler">
+          <t-dropdown :options="options" :min-column-width="112" @click="clickHandler">
             <t-button variant="outline" theme="default" style="width: 150px; font-family: 'Oxanium', sans-serif;">
               <i class="" style="margin-right: 8px;"></i> Components
               <template #suffix>
@@ -216,6 +219,7 @@ menu
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
+import '../assets/style.css'
 import { useRoute, useRouter } from 'vue-router';
 import {
   HeadMenu as THeadMenu,
@@ -310,6 +314,11 @@ onBeforeUnmount(() => {
   overflow-y: auto;
 }
 
+body {
+  background-color: #fdfdfd;
+
+}
+
 /* Desktop Friends Card */
 .friends-card {
   width: 900px;
@@ -333,7 +342,7 @@ onBeforeUnmount(() => {
 
 .friend-cell:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .friend-info {
@@ -349,7 +358,7 @@ onBeforeUnmount(() => {
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .friend-label {
@@ -383,11 +392,11 @@ onBeforeUnmount(() => {
     width: 100%;
     max-width: none;
   }
-  
+
   .friend-cell {
     padding: 10px;
   }
-  
+
   .friend-image {
     width: 40px;
     height: 40px;

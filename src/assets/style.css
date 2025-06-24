@@ -15,14 +15,16 @@
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: #fdfdfd;
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .t-card {
   background-color: var(--card-bg);
   color: var(--text-color);
 }
+
 .t-input input {
   background-color: transparent;
   color: var(--text-color);
