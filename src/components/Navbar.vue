@@ -96,16 +96,16 @@
           </t-dropdown>
 
           <t-button variant="text" @click="navigateTo('0')">
-            <i class="fas fa-home" style="margin-right: 8px;"></i> Home
+            <i class="" style="margin-right: 8px;"></i> Home
           </t-button>
           <t-button variant="text" @click="navigateTo('1')">
-            <i class="fas fa-user" style="margin-right: 8px;"></i> About
+            <i class="" style="margin-right: 8px;"></i> About
           </t-button>
           <t-button variant="text" @click="navigateTo('2')">
-            <i class="fas fa-project-diagram" style="margin-right: 8px;"></i> Projects
+            <i class="" style="margin-right: 8px;"></i> Projects
           </t-button>
           <t-button variant="text" @click="navigateTo('3')">
-            <i class="fas fa-phone" style="margin-right: 8px;"></i> Contact
+            <i class="" style="margin-right: 8px;"></i> Contact
           </t-button>
         </div>
       </t-drawer>
