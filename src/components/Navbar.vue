@@ -243,11 +243,51 @@ const searchQuery = ref('');
 const showFriendsCard = ref(false);
 const showFriendsCardMobile = ref(false);
 
-const options = [
-  { content: 'Button', value: 'btn' },
-  { content: 'Card', value: 'card' },
-  { content: 'Dialog', value: 'dialog' },
-];
+import { h} from 'vue';
+
+const options = ref([
+  // {
+  //   value: 'btn',
+  //   content: () =>
+  //     h(
+  //       'div',
+  //       {
+  //         style: {
+  //           width: '500px',      // Custom width
+  //           height: '600px',      // Custom height
+  //           lineHeight: '60px',  // Vertically center text
+  //           padding: '0 16px',
+  //           backgroundColor: '#fff',
+  //           borderBottom: '1px solid #eee',
+  //           boxSizing: 'border-box',
+  //           fontFamily: 'Oxanium, sans-serif',
+  //         },
+  //       },
+  //       'Button'
+  //     ),
+  // },
+  // {
+  //   value: 'card',
+  //   content: () =>
+  //     h(
+  //       'div',
+  //       {
+  //         style: {
+  //           width: '550px',
+  //           height: '700px',
+  //           lineHeight: '70px',
+  //           padding: '0 16px',
+  //           backgroundColor: '#fff',
+  //           borderBottom: '1px solid #eee',
+  //           boxSizing: 'border-box',
+  //           fontFamily: 'Oxanium, sans-serif',
+  //         },
+  //       },
+  //       'Card'
+  //     ),
+  // },
+]);
+
 
 const clickHandler = (data) => {
   MessagePlugin.success(`Selected: ${data.content}`);

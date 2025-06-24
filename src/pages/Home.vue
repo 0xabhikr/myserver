@@ -13,7 +13,8 @@
 
   <t-card style="margin: 15px; font-family: 'Oxanium', sans-serif; font-style: italic; background-color: #fdfdfd;">
     <template #title>
-      <div style="background-color: #e6e0f8; padding: 12px 18px;  border-left: 6px solid #8a2be2; margin-bottom: 12px;">
+      <div
+        style="background-color: #e6e0f8; padding: 12px 18px;  border-left: 6px solid #8a2be2; margin-bottom: 12px; border-radius: 4px;">
         <h2 class="thoughts-title" style="margin: 0; font-size: 20px;">✨ Daily Spark of Thought</h2>
       </div>
     </template>
@@ -21,7 +22,8 @@
     <t-divider style="border-top-width: 2px; margin-top: -15px;" />
 
     <!-- Highlighted Quote Block -->
-    <div style="background-color: #f3e8ff; padding: 10px 15px; margin: 15px 0;border-left: 4px solid #a64ac9;">
+    <div
+      style="background-color: #f3e8ff; padding: 10px 15px; margin: 15px 0;border-left: 4px solid #a64ac9; border-radius: 4px;">
       <em>“Sometimes a single thought is all it takes to change your day.”</em>
     </div>
 
@@ -73,8 +75,10 @@
     <t-divider style="border-top-width: 2px; margin-top: 10px;" />
 
     <h3 class="textcolor"
-      style="font-size: 15px; margin-top: 30px; font-weight: 400; font-style: normal; margin-top: -10px; margin-bottom: -25px; ">
-      <u>Akami Bypass</u>
+      style="font-size: 15px; margin-top: 30px; font-weight: 400; font-style: normal; font-family: 'Oxanium', sans-serif; margin-top: -10px; margin-bottom: -25px; ">
+      <u>
+        PHP SCRIPT TO HANDLE TELEGRAM BOT WEBHOOKS WITH REAL-TIME UPDATES
+      </u>
     </h3>
     <div class="social-networks">
       <div class="blog-icon">
@@ -85,9 +89,65 @@
       <span class="blog-label"> 10 June , 2025 | 10:16 PM </span>
 
     </div>
-    <!-- <p style="margin-top: -1px;">It’s been almost a year since I last wrote a good article. Let’s talk about how this
-      year’s
-      hottest language model collides with GraphQL through MCP.</p> -->
+    <p style="margin-top: -1px;">Think of a webhook as a way for Telegram to “ping” your server every time something
+      happens
+      — like when someone sends a message to your bot. Instead of you asking Telegram every few seconds, “Hey, got
+      anything
+      new?”, Telegram just sends the update to your server automatically.
+
+      It’s fast, efficient, and real-time.
+
+    </p>
+    <br>
+    <h3 class="textcolor"
+      style="font-size: 15px; margin-top: 30px; font-weight: 400; font-style: normal; font-family: 'Oxanium', sans-serif; margin-top: -10px; margin-bottom: -25px; ">
+      <u>
+        PHP SCRIPT TO HANDLE TELEGRAM BOT WEBHOOKS WITH REAL-TIME UPDATES
+      </u>
+    </h3>
+    <div class="social-networks">
+      <div class="blog-icon">
+        <a href="https://github.com/0xabhikr" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+          <i class="fa-solid fa-calendar-days"></i>
+        </a>
+      </div>
+      <span class="blog-label"> 10 June , 2025 | 10:16 PM </span>
+
+    </div>
+    <p style="margin-top: -1px;">Think of a webhook as a way for Telegram to “ping” your server every time something
+      happens
+      — like when someone sends a message to your bot. Instead of you asking Telegram every few seconds, “Hey, got
+      anything
+      new?”, Telegram just sends the update to your server automatically.
+
+      It’s fast, efficient, and real-time.
+
+    </p>
+    <br>
+    <h3 class="textcolor"
+      style="font-size: 15px; margin-top: 30px; font-weight: 400; font-style: normal; font-family: 'Oxanium', sans-serif; margin-top: -10px; margin-bottom: -25px; ">
+      <u>
+        PHP SCRIPT TO HANDLE TELEGRAM BOT WEBHOOKS WITH REAL-TIME UPDATES
+      </u>
+    </h3>
+    <div class="social-networks">
+      <div class="blog-icon">
+        <a href="https://github.com/0xabhikr" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+          <i class="fa-solid fa-calendar-days"></i>
+        </a>
+      </div>
+      <span class="blog-label"> 10 June , 2025 | 10:16 PM </span>
+
+    </div>
+    <p style="margin-top: -1px;">Think of a webhook as a way for Telegram to “ping” your server every time something
+      happens
+      — like when someone sends a message to your bot. Instead of you asking Telegram every few seconds, “Hey, got
+      anything
+      new?”, Telegram just sends the update to your server automatically.
+
+      It’s fast, efficient, and real-time.
+
+    </p>
 
   </t-card>
 </template>
