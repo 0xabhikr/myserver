@@ -27,21 +27,18 @@
       <em>“Sometimes a single thought is all it takes to change your day.”</em>
     </div>
 
-    <!-- Thoughtful List -->
-    <ul class="info-list" style="list-style-type: none; padding-left: 15px;">
-      <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-        <span style="position: absolute; left: 0;">💬</span>
-        “Language shapes the way we think, and determines what we can think about.” – Benjamin Lee Whorf
-      </li>
-      <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-        <span style="position: absolute; left: 0;">💻</span>
-        “Programming isn't about what you know; it's about what you can figure out.” – Chris Pine
-      </li>
-      <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-        <span style="position: absolute; left: 0;">🔒</span>
-        “In cybersecurity, the biggest vulnerability is thinking you’re not a target.”
-      </li>
-    </ul>
+    <ul class="info-list" style="list-style-type: disc; padding-left: 40px;">
+  <li style="margin-bottom: 10px;">
+    Embrace the present moment. Yesterday is gone, and tomorrow isn't guaranteed. Find joy and purpose in what you're doing right now.
+  </li>
+  <li style="margin-bottom: 10px;">
+    A small act of kindness can create a ripple effect. You never know how much a simple compliment or helping hand might brighten someone's day, and in turn, your own.
+  </li>
+  <li style="margin-bottom: 10px;">
+    Growth begins at the edge of your comfort zone. Don't be afraid to try something new or challenge yourself today. That's where true learning and progress happen.
+  </li>
+</ul>
+
 
     <div class="social-networks">
       <span class="social-label">Social Networks:</span>
