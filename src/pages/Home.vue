@@ -73,7 +73,9 @@
     </div>
     <t-divider style="border-top-width: 2px; margin-top: 10px;" />
 
-    <h1 style="font-size: 30px; margin-top: 30px; font-weight: 400; font-style: normal; background-color: #e6e0f8; padding: 12px 18px;  border-left: 6px solid #8a2be2; margin-bottom: 12px; border-radius: 4px;"> </h1>
+    <h1
+      style="font-size: 30px; margin-top: 30px; font-weight: 400; font-style: normal; background-color: #e6e0f8; padding: 12px 18px;  border-left: 6px solid #8a2be2; margin-bottom: 12px; border-radius: 4px;">
+    </h1>
     <t-divider style="border-top-width: 2px; margin-top: 10px;" />
     <div
       style="position: relative; padding: 20px; border: 1px solid #ddd; border-radius: 10px; overflow: hidden; font-family: 'Oxanium', sans-serif; background-color: #fff;">
